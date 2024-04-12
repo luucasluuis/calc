@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from calc.data import Calculadora
 
-
+# por favor
 calc = Calculadora()
 
 def calculando(request):
