@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, #614ad3,#1e1647);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 50px;
+    margin: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.highlight{
+    color: #614ad3;
+}
+.calculadora{
+    width: 400px;
+    border-radius: 35px;
+    padding: 15px;
+    background-color: black;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.resultado{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    height: 39%;
+}
+.resultado span{
+    max-width: fit-content;
+    margin-right: 26px;
+    font-size: 75px;
+    justify-self: flex-end;
+    padding: 25px 0;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.resultado span::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+    height: 10px; /* Altura da barra de rolagem */
+  }
+  
+  /* Estilo do "thumb" (a parte móvel da barra de rolagem) */
+  .resultado span::-webkit-scrollbar-thumb {
+    background-color:#614ad3; /* Cor de fundo do "thumb" */
+    border-radius: 5px; /* Borda arredondada */
+  }
+  
+  /* Estilo do "thumb" quando estiver sendo arrastado */
+  .resultado span::-webkit-scrollbar-thumb:hover {
+    background-color: #2A1E66; /* Altera a cor de fundo ao passar o mouse */
+  }
+
+  /* Estilo do "track" (a área lateral da barra de rolagem) */
+.resultado span::-webkit-scrollbar-track {
+    background-color: transparent; /* Torna o track transparente */
+  }
+  
+
+.butoes{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 12px;
+    
+}
+button:hover {
+    background-color: #BDB5E6;
+    /* color: #1e1647; */
+}
+
+button{
+    font-size: 1.2em;
+    color: white;
+    border-radius: 100%;
+    width: 4em;
+    height: 4em;
+    cursor: pointer;
+    margin: 5px;
+  
+}
+.simbolo{
+    background-color: #a5a5a5;
+    border: none;
+    color: black;
+}
+
+.simbolo_segundo{
+    background-color: #1e1647;
+    border: none;
+}
+
+.simbolo_segundo:hover {
+    background-color: #2A1E66;
+}
+
+
+.numero, .virgula{
+    background-color: #614ad3;
+    border: none;
+}
+
+.numero:hover, .virgula:hover, .numero_zero:hover{
+    background-color:#5E5A72;
+}
+
+.numero_zero{
+    background-color: #614ad3;
+    border: none;
+    width: 185px;
+    border-radius: 135px;
+    grid-column: span 2;
+}
